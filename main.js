@@ -145,7 +145,7 @@ gltfLoader.load(
 
     // load video
     const video = document.createElement('video');
-    video.src = 'textures/arcane.mp4';
+    video.src = 'textures/arcane2.mp4';
     video.muted = true;
     video.playsInline = true;
     video.autoplay = true;
@@ -577,7 +577,7 @@ function resetCamera() {
 }
 
 function logoListener() {
-  document.getElementById('logo').addEventListener('click', function (e) {
+  document.getElementById('logo2').addEventListener('click', function (e) {
     e.preventDefault();
     resetCamera();
   });
