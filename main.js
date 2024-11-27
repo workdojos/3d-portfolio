@@ -207,7 +207,7 @@ gltfLoader.load(
 
         // adding texture to book
         const bookTexture = new THREE.TextureLoader().load(
-          'textures/book-inner2.jpg'
+          'textures/book-inner3.png'
         );
         bookTexture.flipY = false;
         child.material = new THREE.MeshStandardMaterial({
