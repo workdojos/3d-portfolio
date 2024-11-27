@@ -8,6 +8,11 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import { defineConfig } from 'vite';
+import { whyframe } from '@whyframe/core';
+import { whyframeSvelte } from '@whyframe/svelte';
+import { whyframeVue } from '@whyframe/vue';
+import { whyframeJsx } from '@whyframe/jsx';
 
 // VARIABLES
 let theme = 'light';
@@ -800,4 +805,20 @@ window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+export default defineConfig({
+  plugins: [
+    // Initialize core plugin
+    whyframe(),
+
+    // Initialize Svelte integration plugin
+    whyframeSvelte(),
+
+    // Or initialize Vue integration plugin
+    whyframeVue(),
+
+    // Or initialize JSX integration plugin (also specify the UI framework)
+    whyframeJSX({ defaultFramework: 'react' })
+  ]
 });
