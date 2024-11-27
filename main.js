@@ -28,20 +28,40 @@ let clipNames = [
 ];
 let projects = [
   {
-    image: 'textures/project-spaze.webp',
-    url: 'https://www.spaze.social/',
+    image: 'textures/Slide1.jpg',
+    url: 'https://oneplace.host/',
   },
   {
-    image: 'textures/project-myteachers.jpg',
-    url: 'https://myteachers.com.au/',
+    image: 'textures/Slide2.jpg',
+    url: 'https://oneplace.host/',
   },
   {
-    image: 'textures/project-wholesale.jpg',
-    url: 'https://wholesale.com.np/',
+    image: 'textures/Slide3.jpg',
+    url: 'https://oneplace.host/',
   },
   {
-    image: 'textures/project-pelotero.jpg',
-    url: 'https://www.peloterosenlaweb.com/',
+    image: 'textures/Slide4.jpg',
+    url: 'https://oneplace.host/',
+  },
+  {
+    image: 'textures/Slide5.jpg',
+    url: 'https://oneplace.host/',
+  },
+  {
+    image: 'textures/Slide6.jpg',
+    url: 'https://oneplace.host/',
+  },
+  {
+    image: 'textures/Slide7.jpg',
+    url: 'https://oneplace.host/',
+  },
+  {
+    image: 'textures/Slide8.jpg',
+    url: 'https://oneplace.host/',
+  },
+  {
+    image: 'textures/Slide9.jpg',
+    url: 'https://oneplace.host/',
   },
 ];
 let aboutCameraPos = {
@@ -187,7 +207,7 @@ gltfLoader.load(
 
         // adding texture to book
         const bookTexture = new THREE.TextureLoader().load(
-          'textures/book-inner.jpg'
+          'textures/book-inner2.jpg'
         );
         bookTexture.flipY = false;
         child.material = new THREE.MeshStandardMaterial({
